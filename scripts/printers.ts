@@ -26,7 +26,7 @@ interface ModelFileInfo {
   encoding: 'base64';
 }
 
-(async function main() {
+(async function () {
   logger.debug('Fetching model files ...');
   const modelFiles = await getModelFiles();
 

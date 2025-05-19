@@ -1,3 +1,7 @@
 .ant-form-item .ant-form-item-label {
   text-align: start;
 }
+
+.ant-notification-notice {
+  font-family: 'Fira Code', monospace;
+}

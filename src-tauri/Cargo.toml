@@ -2,7 +2,7 @@
 name = "bambu-studio-discovery"
 version = "1.0.0"
 description = "BambuStudio Discovery Daemon"
-authors = ["Timon Peng"]
+authors = ["HardFury", "Timon Peng"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

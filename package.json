@@ -1,5 +1,5 @@
 {
-  "name": "bambu-studio-discovery",
+  "name": "@hardfury/bambu-studio-discovery",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -16,6 +16,7 @@
     "lint:prettier": "prettier --check ./src/**/*.{ts,tsx}"
   },
   "dependencies": {
+    "@fontsource/fira-code": "^5.2.6",
     "@kuyoonjo/tauri-plugin-udp": "^0.1.1",
     "@tauri-apps/api": "^2.5.0",
     "@tauri-apps/plugin-opener": "^2.2.6",

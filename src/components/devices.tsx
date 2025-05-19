@@ -1,8 +1,10 @@
 import { bind, send, unbind } from '@kuyoonjo/tauri-plugin-udp';
-import { Button, notification, Popconfirm, Table, TableProps } from 'antd';
+import { Button, Popconfirm, Table, TableProps } from 'antd';
 
 import { Device, useDevices } from '~/store';
-import { buildSsdpMessage, nanoid } from '~/utils';
+import { nanoid } from '~/utils';
+import { buildSsdpMessage } from '~/utils/bambu';
+import * as Notification from '~/utils/notification';
 
 export function Devices() {
   const { devices, setEditingSN, removeDevices } = useDevices();
@@ -45,15 +47,10 @@ export function Devices() {
   function broadcast(devices: Device[]) {
     Promise.all(devices.map(report))
       .then(() => {
-        notification.success({
-          message: 'Broadcast success',
-        });
+        Notification.success({ title: 'Broadcast success' });
       })
       .catch((error) => {
-        notification.error({
-          message: 'Broadcast failed',
-          description: error.message,
-        });
+        Notification.error({ title: 'Broadcast failed', description: error.message });
       });
   }
 

@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "BambuStudio Discovery",
+  "productName": "BambuStudioDiscovery",
   "version": "1.0.0",
-  "identifier": "com.timonpeng.bambu-studio-discovery",
+  "identifier": "com.hardfury.bambu-studio-discovery",
   "build": {
     "beforeDevCommand": "pnpm web:dev",
     "devUrl": "http://localhost:1420",
