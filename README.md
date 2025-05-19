@@ -10,7 +10,7 @@ It also enables connection to printers located on different subnets, accessible 
 
 ## Download
 
-[Download](https://github.com/hardfury-labs/BambuStudioDiscovery/releases/latest)
+[Download the release](https://github.com/hardfury-labs/BambuStudioDiscovery/releases)
 
 ## Requirements
 
@@ -18,9 +18,9 @@ Nothing special.
 
 ## Platforms
 
+- macOS
 - Windows
 - Linux Ubuntu
-- macOS
 
 ## Development
 
